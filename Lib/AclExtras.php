@@ -54,7 +54,7 @@ class AclExtras extends Object {
  *
  * @var string
  **/
-	public $rootNode = 'controllers';
+	public $rootNode = 'AllDomains';
 
 /**
  * Internal Clean Actions switch
@@ -269,7 +269,7 @@ class AclExtras extends Object {
  */
 	protected function _checkMethods($className, $controllerName, $node, $pluginPath = false) {
 		$excludes = $this->_getCallbacks($className);
-		$baseMethods = get_class_methods('Controller');
+		$baseMethods = get_class_methods('AppController');
 		$actions = get_class_methods($className);
 		if ($actions == null) {
 			$this->err(__('Unable to get methods for "%s"', $className));
