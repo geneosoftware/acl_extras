@@ -1,23 +1,13 @@
 {
-	"name": "markstory/acl_extras",
+	"name": "geneosoftware/cakephp-acl-extras",
 	"description": "Additional tools for managing DB ACL in CakePHP applications.",
 	"type": "cakephp-plugin",
-	"keywords": ["cakephp", "acl"],
-	"homepage": "https://github.com/markstory/acl_extras",
 	"license": "MIT",
-	"authors": [
-		{
-			"name": "Mark Story",
-			"homepage": "http://mark-story.com",
-			"role": "Author"
-		}
-	],
-	"support": {
-		"issues": "https://github.com/markstory/acl_extras/issues",
-		"source": "https://github.com/markstory/acl_extras"
-	},
 	"require": {
 		"php": ">=5.2.17",
 		"composer/installers": "*"
-	}
+	},
+	"extra": {
+      "installer-name": "AclExtras"
+    }
 }
